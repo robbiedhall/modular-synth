@@ -3,10 +3,7 @@
     <div class="blank-connect" v-for="(dir, key, i) in connections" v-if="connections[key]" :class="[ {'blank-in' : connections[key].in}, {'blank-out': connections[key].out}, {'blank-off': !connections[key].active},  `blank-${key}`]">
     </div>
     <div class="blank-pass-type">
-      <button @click="togglePassType"><i class="fa fa-chevron-left"></i></button>
-      <i v-if="passType === 'audio'" class="fa fa-volume-down"></i>
-      <i v-else class="fa fa-signal"></i>
-      <button @click="togglePassType"><i class="fa fa-chevron-right"></i></button>
+
     </div>
   </div>
 </template>

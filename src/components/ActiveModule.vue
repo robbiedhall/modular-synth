@@ -3,7 +3,10 @@
     <div class="module-select">
       <button @click="toggleModuleType('left', module.name)"><i class="fa fa-chevron-left"></i></button>
       <i v-if="module.type === 'key-input'" class="fa fa-keyboard fa-3x"></i>
-      <i v-if="module.type === 'audio-out'" class="fa fa-volume-up fa-3x"></i>
+      <i v-if="module.type === 'audio-out'" class="fa fa-headphones-alt fa-3x"></i>
+      <i v-if="module.type === 'mono-osc'" class="fa fa-signature fa-3x"></i>
+      <i v-if="module.type === 'mono-filter'" class="fa fa-filter fa-3x"></i>
+      <i v-if="module.type === 'mono-amp'" class="fa fa-volume-up fa-3x"></i>
       <button @click="toggleModuleType('right', module.name)"><i class="fa fa-chevron-right"></i></button>
     </div>
     <div class="module-type">
@@ -13,6 +16,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'ActiveModule',
   props: {

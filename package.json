@@ -11,6 +11,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.2",
     "@fortawesome/free-solid-svg-icons": "^5.2.0",
     "@fortawesome/vue-fontawesome": "^0.1.1",
+    "tone": "^13.3.6",
     "vue": "^2.5.17",
     "vuex": "^3.0.1"
   },

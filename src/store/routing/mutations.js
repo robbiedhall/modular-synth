@@ -19,5 +19,7 @@ export default {
        }
     }
     state.modules[moduleObj.name] = moduleObj
+    //Calculate valid signal paths
+
   }
 }
